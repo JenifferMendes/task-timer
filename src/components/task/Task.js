@@ -1,6 +1,4 @@
 class Task {
-
-
     constructor (title, timer) {
         if (!title) {
             throw new Error("O nome da tarefa é obrigatório")
@@ -17,7 +15,3 @@ class Task {
         this.steps.push(task)
     }
 }
-
-const task = new Task("piano", 40)
-const aquecimento = new Task("aquecimento", 10)
-task.addStep(aquecimento)
